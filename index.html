@@ -10,6 +10,7 @@
 <link href="css/style.css" rel="stylesheet" type="text/css"> 
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <!-- Header -->
@@ -27,7 +28,7 @@
         </div>
         <div id="main-nav" class="collapse navbar-collapse navStyle">
           <ul class="nav navbar-nav" id="mainNav">
-            <li class="active"><a href="#sessions" class="scroll-link">Séances</a></li>
+            <li class="active"><a href="#team" class="scroll-link">Team</a></li>
           </ul>
         </div>
       </nav>
@@ -36,69 +37,51 @@
 </header>
 <!-- Header End -->
 
-<!-- Séances Section -->
-<section id="sessions" class="content"> 
+<!-- Team Section -->
+<section id="team" class="content"> 
   <br/>
   <br/>
-  <h2>Séances</h2>
-  <div class="container portfolio_title"></div>
+  <h2>Team Members</h2>
+  <div class="container portfolio_title"> </div>
+  
   <div class="portfolio"> 
     <div id="portfolio_wrapper" class="isotope grid">
-
-      <!-- Séance 1 -->
+      <!-- Team Member 1 -->
       <figure class="portfolio-item one-four animals isotope-item effect-oscar">
         <div class="portfolio_img"> 
-          <img src="img/CaG_headshot.png" alt="Séance 1"> 
+          <img src="img/Claude_circle.jpg" alt="Claude Bhérer"> 
         </div> 
         <figcaption>    
           <div>
-            <a href="#" onclick="openModal('Séance 1', 'img/session_placeholder.jpg', 'NA', 'NA', '#', '#', '#'); return false;"> 
-              <h2>Séance <span>1</span></h2>
-              <p>NA</p>
+            <a href="#" onclick="openModal('Claude Bhérer', 'img/Claude_circle.jpg', 'Assistant Professor, Department of Human Genetics', 'Claude Bhérer is an Assistant Professor specializing in population genetics and rare diseases.', 'https://www.linkedin.com/in/claude-bh%C3%A9rer-23275213a/', 'https://x.com/claudebherer', 'claude.bherer@mcgill.ca'); return false;"> 
+              <h2>Claude <span>Bhérer</span></h2>
+              <p>Assistant Professor, Department of Human Genetics</p>
             </a>
           </div>
         </figcaption>
       </figure>
 
-      <!-- Séance 2 -->
+      <!-- Team Member 2 -->
       <figure class="portfolio-item one-four nature isotope-item effect-oscar">
         <div class="portfolio_img"> 
-          <img src="img/session_placeholder.jpg" alt="Séance 2"> 
+          <img src="img/CaG_headshot.png" alt="Justin Pelletier"> 
         </div>
         <figcaption>    
           <div>
-            <a href="#" onclick="openModal('Séance 2', 'img/session_placeholder.jpg', 'NA', 'NA', '#', '#', '#'); return false;"> 
-              <h2>Séance <span>2</span></h2>
-              <p>NA</p>
+            <a href="#" onclick="openModal('Justin Pelletier', 'img/CaG_headshot.png', 'Bioinformatics Analyst', 'Justin specializes in population genetics with a focus on French-Canadian founder populations.', 'https://www.linkedin.com/in/justin-pelletier-33339b194/', 'https://x.com/JustinPel97', 'justin.pelletier2@mcgill.ca'); return false;"> 
+              <h2>Justin <span>Pelletier</span></h2>
+              <p>Bioinformatics Analyst</p>
             </a>
           </div>
         </figcaption>
       </figure>
 
-      <!-- Repeat for remaining Séances -->
-      <!-- Séance 3 to Séance 12 -->
-      <!-- Example for Séance 3 -->
-      <figure class="portfolio-item one-four animals isotope-item effect-oscar">
-        <div class="portfolio_img"> 
-          <img src="img/session_placeholder.jpg" alt="Séance 3"> 
-        </div> 
-        <figcaption>    
-          <div>
-            <a href="#" onclick="openModal('Séance 3', 'img/session_placeholder.jpg', 'NA', 'NA', '#', '#', '#'); return false;"> 
-              <h2>Séance <span>3</span></h2>
-              <p>NA</p>
-            </a>
-          </div>
-        </figcaption>
-      </figure>
-      
-      <!-- Continue for Séance 4 to Séance 12 -->
-      <!-- Replace with the same structure and update "Séance X" and image alt text -->
-      
+      <!-- Add More Team Members Here -->
+
     </div>
   </div>
 </section>
-<!-- Séances Section End -->
+<!-- Team Section End -->
 
 <!-- Modal Structure -->
 <div id="teamModal" class="modal">
@@ -109,7 +92,7 @@
     </div>
     <div class="modal-body">
       <div class="modal-left">
-        <img id="memberImage" src="" alt="Session Image">
+        <img id="memberImage" src="" alt="Member Image">
       </div>
       <div class="modal-right">
         <h3 id="memberStatus"></h3>
