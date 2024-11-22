@@ -1267,6 +1267,11 @@ transition: all .3s;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+#memberDescription {
+    text-align: justify;
+    line-height: 1.6; /* Optional: Adjust the line spacing for better readability */
+}
+
 .modal-content {
   background-color: white;
   margin: 5% auto;
