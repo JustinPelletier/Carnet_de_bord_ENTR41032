@@ -55,7 +55,7 @@
           <div>
              <a href="#" onclick="openModal(
                 'Séance 1', 
-                'img/CaG_headshot.png', 
+                'img/charlie1.png', 
                 'Mon alignement - Vision > Mission > Ambition',
                 'Je me situe actuellement à une étape d’exploration active dans l’alignement de ma vision, de ma mission et de mon ambition. Ces trois éléments guident mes choix et mes actions, que ce soit dans mes études, mon travail ou mes projets personnels.\n\n' +
                 'Ma vision est de créer des solutions interdisciplinaires qui allient innovation, collaboration et impact positif sur la société. Je suis particulièrement motivé par les projets qui exploitent les forces des données, de la technologie et de la créativité pour répondre à des problématiques complexes. Cette vision repose sur un engagement à favoriser des environnements où les idées circulent librement et où l’innovation collective peut s’épanouir.\n\n' +
@@ -84,13 +84,13 @@
               'Séance 2', 
               'img/seance2.png', 
               'Impression en trois phrases',
-              'L’expérience a été étonnamment immersive et stimulante, mettant en lumière des perspectives auxquelles je n’aurais pas pensé seul.\n\n' +
-              'L’interactivité et la richesse des réponses m’ont donné l’impression de dialoguer avec un véritable collaborateur, non pas une machine.\n\n' +
+              'L’expérience a été étonnamment immersive et stimulante, mettant en lumière des perspectives auxquelles je n’aurais pas pensé seul.\n' +
+              'L’interactivité et la richesse des réponses m’ont donné l’impression de dialoguer avec un véritable collaborateur, non pas une machine.\n' +
               'Enfin, j’ai été particulièrement impressionné par la capacité à transformer des concepts abstraits comme la créativité en idées concrètes et visuelles.\n\n' +
-              'Deux exemples marquants\n\n' +
-              '1. J’ai été surpris de découvrir comment ChatGPT relie les idées de créativité et d’innovation à des théories philosophiques comme le constructivisme et le positivisme, tout en expliquant leurs implications dans un contexte d’affaires. Cela a élargi ma compréhension théorique tout en restant pertinent.\n\n' +
+              'Deux exemples marquants\n' +
+              '1. J’ai été surpris de découvrir comment ChatGPT relie les idées de créativité et d’innovation à des théories philosophiques comme le constructivisme et le positivisme, tout en expliquant leurs implications dans un contexte d’affaires. Cela a élargi ma compréhension théorique tout en restant pertinent.\n' +
               '2. Les images générées par DALL·E pour représenter un écosystème d’innovation ou une organisation ambidextre ont été frappantes. Ces visuels m’ont aidé à conceptualiser des notions complexes de manière plus tangible.\n\n' +
-              'Une image marquante\n\n' +
+              'Une image marquante\n' +
               'L’image la plus marquante que j’ai obtenue était une représentation d’un « écosystème d’innovation », montrant des connexions dynamiques entre entreprises, chercheurs et startups dans un environnement futuriste et collaboratif. Cette visualisation m’a permis de mieux comprendre le rôle crucial des interactions entre divers acteurs pour stimuler la créativité collective.',
               '#',
               '#',
@@ -298,10 +298,10 @@
     var modal = document.getElementById("teamModal");
     var span = document.getElementsByClassName("close")[0];
 
+     // Function to open the modal
     function openModal(name, image, status, description, linkedin, x, email) {
       document.getElementById("memberName").innerText = name;
       document.getElementById("memberImage").src = image;
-      document.getElementById("memberImage").alt = name + " Image"; // Update the alt text for better accessibility
       document.getElementById("memberStatus").innerText = status;
       document.getElementById("memberDescription").innerText = description;
       document.getElementById("linkedinLink").href = linkedin;
@@ -309,6 +309,8 @@
       document.getElementById("emailLink").href = "mailto:" + email;
       modal.style.display = "block";
     }
+
+    // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
       modal.style.display = "none";
     }
