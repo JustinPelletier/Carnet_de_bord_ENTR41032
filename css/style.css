@@ -1303,9 +1303,19 @@ transition: all .3s;
 }
 
 .modal-right {
-  flex: 2;
-  padding-left: 20px;
+  font-size: 14px; /* Adjust this size as needed */
+  line-height: 1.6; /* Improve readability with line spacing */
 }
+
+.modal-right h3 {
+  font-size: 16px; /* Slightly larger for the title */
+  margin-bottom: 10px; /* Add spacing below the title */
+}
+
+.modal-right p {
+  margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
 
 .modal-links a {
   display: block;
