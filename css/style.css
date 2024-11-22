@@ -1267,11 +1267,6 @@ transition: all .3s;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-#memberDescription {
-    text-align: justify;
-    line-height: 1.6; /* Optional: Adjust the line spacing for better readability */
-}
-
 .modal-content {
   background-color: white;
   margin: 5% auto;
@@ -1305,12 +1300,6 @@ transition: all .3s;
 
 .modal-left {
   flex: 1;
-}
-
-.modal-left img {
-  max-width: 100%;
-  height: auto;
-  display: block; /* Ensure the image is displayed */
 }
 
 .modal-right {
@@ -2547,7 +2536,10 @@ section {
   margin-top: -70px; /* Adjust this value based on the height of your header */
 }
 
-
+#memberDescription {
+    text-align: justify;
+    line-height: 1.6; /* Optional: Adjust the line spacing for better readability */
+}
 
 
 /*
